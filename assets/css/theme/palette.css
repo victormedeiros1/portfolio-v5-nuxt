@@ -2,15 +2,7 @@
   --green: #27ca54;
   --dark: #2f2f2f;
   --light: #eeece9;
-  --gray100: '#ededed';
-  --gray200: '#e1e1e1';
-  --gray300: '#d3d3d3';
-  --gray400: '#c4c4c4';
-  --gray500: '#b3b3b3';
-  --gray600: '#a0a0a0';
-  --gray700: '#898989';
-  --gray800: '#6c6c6c';
-  --gray900: '#3f3f3f';
+  --gray: #888;
   --bg-white: url('~/static/images/bg-white.jpg');
   --bg-dark: url('~/static/images/bg-dark.jpg');
 }
