@@ -14,5 +14,15 @@ section,
 footer {
   width: 100%;
   max-width: 77.5rem; /* 1240px */
+  min-height: 100vh;
+  margin: 0 auto;
   padding: 4rem 1.25rem;
+}
+
+@media (max-width: 768px) {
+  main,
+  section,
+  footer {
+    min-height: initial;
+  }
 }
