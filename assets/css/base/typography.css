@@ -14,6 +14,7 @@
   --fs-56: 3.5rem;
   --fs-64: 4rem;
   --fs-80: 5rem;
+  --fs-96: 6rem;
   --fs-100: 6.25rem;
 
   /* ===== Line height ===== */
@@ -31,6 +32,7 @@
   --lh-56: 3.5rem;
   --lh-64: 4rem;
   --lh-80: 5rem;
+  --lh-96: 6rem;
   --lh-100: 6.25rem;
 }
 
