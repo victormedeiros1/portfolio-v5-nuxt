@@ -1,11 +1,24 @@
 <template>
-  <h1>Portfólio</h1>
+  <div class="app-container">
+    <Hero />
+  </div>
 </template>
 
 <script>
+import Hero from './sections/Hero'
+
 export default {
-  name: 'IndexPage',
+  name: 'Index',
+  components: {
+    Hero,
+  },
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.app-container {
+  background-image: var(--bg-white);
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
