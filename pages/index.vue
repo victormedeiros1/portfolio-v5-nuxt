@@ -1,16 +1,19 @@
 <template>
   <div class="app-container">
     <Hero />
+    <About />
   </div>
 </template>
 
 <script>
 import Hero from './sections/Hero'
+import About from './sections/About'
 
 export default {
   name: 'Index',
   components: {
     Hero,
+    About,
   },
 }
 </script>
