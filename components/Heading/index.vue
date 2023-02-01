@@ -1,7 +1,7 @@
 <template>
   <header>
     <Bars />
-    <h3 class="heading">{{ title }}</h3>
+    <h3 class="heading"><slot /></h3>
     <Bars reverse />
   </header>
 </template>
@@ -14,18 +14,20 @@ export default {
   components: {
     Bars,
   },
-  props: {
-    title: {
-      type: String,
-      default: '',
-    },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
-.heading {
-  color: var(--green);
-  margin-bottom: var(--m-8);
+header {
+  margin-bottom: var(--m-32);
+
+  @media (max-width: 992px) {
+    margin-bottom: var(--m-24);
+  }
+
+  .heading {
+    color: var(--green);
+    margin-bottom: var(--m-8);
+  }
 }
 </style>
