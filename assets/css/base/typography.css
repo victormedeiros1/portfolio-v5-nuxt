@@ -52,5 +52,11 @@ h4 {
 
 p {
   font-size: var(--fs-14);
-  line-height: var(--ln-18);
+  line-height: var(--lh-18);
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: var(--fs-64);
+  }
 }
