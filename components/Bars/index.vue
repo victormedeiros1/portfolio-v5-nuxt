@@ -1,8 +1,8 @@
 <template>
   <div
-    :class="`bars ${green && 'bars--green'} ${small && 'bars--small'} ${
-      reverse && 'bars--reverse'
-    } ${end && 'bars--end'}`"
+    :class="`bars ${small && 'bars--small'} ${reverse && 'bars--reverse'} ${
+      end && 'bars--end'
+    }`"
   >
     <div :class="`bar bar--small ${dark && 'bar--dark'}`"></div>
     <div :class="`bar bar--medium ${dark && 'bar--dark'}`"></div>
@@ -14,7 +14,7 @@
 export default {
   name: 'Bars',
   props: {
-    green: {
+    dark: {
       type: Boolean,
       default: false,
     },
