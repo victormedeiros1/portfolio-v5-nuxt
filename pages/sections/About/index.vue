@@ -62,6 +62,7 @@ export default {
   &__subtitle {
     font-size: var(--fs-24);
     font-weight: 700;
+    margin-bottom: var(--m-16);
 
     @media (max-wight: 768px) {
       font-size: var(--fs-16);
@@ -69,9 +70,6 @@ export default {
   }
   &__content {
     min-width: 25rem;
-    display: flex;
-    flex-direction: column;
-    gap: var(--g-16);
 
     @media (max-width: 768px) {
       min-width: initial;
