@@ -1,5 +1,5 @@
 <template>
-  <a class="CTA" :href="href">DISCOVER</a>
+  <a class="CTA" :href="href"><slot /></a>
 </template>
 
 <script>
@@ -27,6 +27,13 @@ export default {
   border-radius: 0px 100px;
   transition: 0.3s;
   padding: var(--p-16) var(--p-64);
+
+  @media (max-width: 768px) {
+    font-size: var(--fs-14);
+    line-height: initial;
+    border: 1px solid var(--dark);
+    padding: var(--p-10) var(--p-32);
+  }
 
   &:hover {
     background-color: var(--dark);
