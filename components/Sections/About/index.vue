@@ -23,7 +23,7 @@
     </div>
     <div class="about__photo">
       <nuxt-img
-        src="/images/photo.png"
+        src="images/photo.png"
         alt="José Victor"
         sizes="sm:90vw md:335px lg:40vw xl:500px"
       />
