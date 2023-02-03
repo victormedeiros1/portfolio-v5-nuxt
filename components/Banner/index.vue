@@ -1,5 +1,5 @@
 <template>
-  <nuxt-img class="banner" :src="src" :alt="alt" />
+  <img class="banner" :src="src" :alt="alt" />
 </template>
 
 <script>

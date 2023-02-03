@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Hero from './sections/Hero'
-import About from './sections/About'
-import Works from './sections/Works'
+import Hero from '@/components/Sections/Hero'
+import About from '@/components/Sections/About'
+import Works from '@/components/Sections/Works'
 
 export default {
   name: 'Index',

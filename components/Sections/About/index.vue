@@ -1,7 +1,7 @@
 <template>
   <section class="about">
     <div class="about__content">
-      <Heading>ABOUT ME</Heading>
+      <Heading>ABOUT</Heading>
       <h4 class="about__subtitle">NICE TO MEET YOU!</h4>
       <Paragraph
         >I started programming in 2017 and graduated as a Computer Technician at
@@ -22,11 +22,7 @@
       >
     </div>
     <div class="about__photo">
-      <nuxt-img
-        src="images/photo.png"
-        alt="José Victor"
-        sizes="sm:90vw md:335px lg:40vw xl:500px"
-      />
+      <img src="/images/photo.png" alt="José Victor" />
     </div>
   </section>
 </template>
@@ -48,11 +44,7 @@ export default {
 .about {
   display: flex;
   align-items: center;
-  gap: var(--g-96);
-
-  @media (max-width: 992px) {
-    gap: var(--g-48);
-  }
+  gap: var(--g-48);
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -64,19 +56,28 @@ export default {
     font-weight: 700;
     margin-bottom: var(--m-16);
 
-    @media (max-wight: 768px) {
+    @media (max-width: 768px) {
       font-size: var(--fs-16);
     }
   }
   &__content {
-    min-width: 25rem;
+    width: 100%;
+    max-width: 37.5rem;
 
     @media (max-width: 768px) {
       min-width: initial;
     }
   }
   &__photo {
-    max-width: 500px;
+    img {
+      max-width: 31.25rem;
+      min-width: 25rem;
+      width: 100%;
+
+      @media (max-width: 768px) {
+        min-width: initial;
+      }
+    }
   }
 }
 </style>
