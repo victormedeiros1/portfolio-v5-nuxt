@@ -4,6 +4,7 @@
     <About />
     <Works />
     <Skills />
+    <Contact />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Hero from '@/components/Sections/Hero'
 import About from '@/components/Sections/About'
 import Works from '@/components/Sections/Works'
 import Skills from '@/components/Sections/Skills'
+import Contact from '@/components/Sections/Contact'
 
 export default {
   name: 'Index',
@@ -20,6 +22,7 @@ export default {
     About,
     Works,
     Skills,
+    Contact,
   },
 }
 </script>
