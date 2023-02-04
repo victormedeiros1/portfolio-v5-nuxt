@@ -9,24 +9,30 @@
     <div class="hero__brand">
       <Brand />
     </div>
+    <div class="hero__social-medias">
+      <SocialMedias />
+    </div>
   </main>
 </template>
 
 <script>
 import Brand from '@/components/Brand'
 import CTA from '@/components/CTA'
+import SocialMedias from '@/components/SocialMedias'
 
 export default {
   name: 'Hero',
   components: {
     Brand,
     CTA,
+    SocialMedias,
   },
 }
 </script>
 
 <style lang="scss" scoped>
 .hero {
+  position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -71,6 +77,10 @@ export default {
       max-width: 10rem;
       margin: 0 auto var(--m-32) auto;
     }
+  }
+  &__social-medias {
+    position: absolute;
+    bottom: 2rem;
   }
 }
 </style>

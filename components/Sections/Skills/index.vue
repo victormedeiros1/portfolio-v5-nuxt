@@ -1,6 +1,6 @@
 <template>
   <section class="skills">
-    <img class="skills__art" src="/images/skills.svg" />
+    <img class="skills__art" src="/images/svg/skills.svg" />
   </section>
 </template>
 
