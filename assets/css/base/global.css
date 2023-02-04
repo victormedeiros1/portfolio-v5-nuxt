@@ -5,6 +5,9 @@
   box-sizing: border-box;
   color: var(--dark);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 button {
   cursor: pointer;
@@ -14,10 +17,13 @@ main,
 section,
 footer {
   width: 100%;
-  max-width: 77.5rem; /* 1240px */
+  max-width: 77.5rem;
   min-height: 100vh;
   margin: 0 auto;
   padding: 4rem 1.25rem;
+}
+a {
+  display: inherit;
 }
 
 @media (max-width: 768px) {
@@ -25,5 +31,22 @@ footer {
   section,
   footer {
     min-height: initial;
+  }
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.icon:hover path {
+  fill: var(--green);
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 1rem;
+    height: 1rem;
   }
 }
