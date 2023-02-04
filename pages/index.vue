@@ -1,5 +1,6 @@
 <template>
   <div class="app-container">
+    <Navbar />
     <Hero />
     <About />
     <Works />
@@ -9,6 +10,7 @@
 </template>
 
 <script>
+import Navbar from '@/components/Navbar'
 import Hero from '@/components/Sections/Hero'
 import About from '@/components/Sections/About'
 import Works from '@/components/Sections/Works'
@@ -18,6 +20,7 @@ import Contact from '@/components/Sections/Contact'
 export default {
   name: 'Index',
   components: {
+    Navbar,
     Hero,
     About,
     Works,

@@ -1,5 +1,5 @@
 <template>
-  <main class="hero">
+  <main id="hero" class="hero">
     <div class="hero__content">
       <h1 class="hero__title">JOSÉ VICTOR</h1>
       <h2 class="hero__subtitle">FRONT-END DEVELOPER</h2>
@@ -10,7 +10,7 @@
       <Brand />
     </div>
     <div class="hero__social-medias">
-      <SocialMedias />
+      <SocialMedias vertical />
     </div>
   </main>
 </template>
@@ -32,7 +32,6 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -80,12 +79,8 @@ export default {
   }
   &__social-medias {
     position: absolute;
-    bottom: 2rem;
-
-    @media (max-width: 768px) {
-      top: 2rem;
-      bottom: initial;
-    }
+    top: 2rem;
+    left: 2rem;
   }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="skills">
+  <section id="skills" class="skills">
     <img class="skills__art" src="/images/svg/skills.svg" />
   </section>
 </template>

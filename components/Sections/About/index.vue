@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section id="about" class="about">
     <div class="about__content">
       <Heading>ABOUT</Heading>
       <h4 class="about__subtitle">NICE TO MEET YOU!</h4>

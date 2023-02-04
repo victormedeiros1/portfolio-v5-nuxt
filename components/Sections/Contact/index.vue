@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section id="contact" class="contact">
     <h3 class="contact__title">I'M OPEN TO <br />NEW OPPORTUNITIES</h3>
     <h4 class="contact__subtitle">LET’S BUILD SOMETHING TOGETHER?</h4>
     <CTA>SAY HELLO</CTA>
