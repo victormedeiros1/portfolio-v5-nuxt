@@ -1,5 +1,5 @@
 <template>
-  <div class="social-medias">
+  <div :class="`social-medias ${vertical && 'social-medias--vertical'}`">
     <a
       href="https://www.instagram.com/victor_mdrss/"
       rel="author"
@@ -7,7 +7,7 @@
     >
       <Instagram />
     </a>
-    <div class="social-medias__divider"></div>
+    <div v-if="!vertical" class="social-medias__divider"></div>
     <a
       href="https://www.linkedin.com/in/josevictordev/"
       rel="author"
@@ -15,11 +15,11 @@
     >
       <LinkedIn />
     </a>
-    <div class="social-medias__divider"></div>
+    <div v-if="!vertical" class="social-medias__divider"></div>
     <a href="https://github.com/victormedeiros1" rel="author" target="_blank">
       <GitHub />
     </a>
-    <div class="social-medias__divider"></div>
+    <div v-if="!vertical" class="social-medias__divider"></div>
     <a
       href="https://www.figma.com/@victormedeiros1"
       rel="author"
@@ -44,6 +44,12 @@ export default {
     GitHub,
     Figma,
   },
+  props: {
+    vertical: {
+      type: Boolean,
+      default: false,
+    },
+  },
 }
 </script>
 
@@ -54,12 +60,15 @@ export default {
   align-items: center;
   gap: var(--g-16);
 
+  &--vertical {
+    flex-direction: column;
+  }
+
   &__divider {
     width: 0.25rem;
     height: 0.25rem;
     background-color: var(--dark);
     border-radius: 50%;
   }
-
 }
 </style>
