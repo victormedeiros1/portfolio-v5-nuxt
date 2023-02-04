@@ -81,6 +81,11 @@ export default {
   &__social-medias {
     position: absolute;
     bottom: 2rem;
+
+    @media (max-width: 768px) {
+      top: 2rem;
+      bottom: initial;
+    }
   }
 }
 </style>
