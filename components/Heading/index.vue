@@ -28,6 +28,10 @@ header {
   .heading {
     color: var(--green);
     margin-bottom: var(--m-8);
+
+    @media (max-width: 768px) {
+      margin-bottom: var(--m-28);
+    }
   }
 }
 </style>
