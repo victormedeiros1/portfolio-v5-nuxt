@@ -8,8 +8,11 @@
       </Paragraph>
     </div>
     <div class="card__footer">
-      <CTA :href="href" :target="_blank">VISIT</CTA>
-      <span class="card__date">{{ company }}</span>
+      <CTA :href="href" target="_blank">VISIT</CTA>
+      <span v-if="company" class="card__company">{{ company }}</span>
+      <a v-if="repository" class="card__link" :href="repository" target="_blank"
+        >REPOSITORY</a
+      >
     </div>
     <div class="card__corner card__corner--bottom"></div>
   </article>
@@ -39,6 +42,10 @@ export default {
       default: '',
     },
     href: {
+      type: String,
+      default: '',
+    },
+    repository: {
       type: String,
       default: '',
     },
@@ -85,24 +92,41 @@ export default {
 
     @media (max-width: 768px) {
       font-size: var(--fs-16);
+      line-height: var(--lh-20);
     }
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: var(--m-32);
 
     @media (max-width: 768px) {
       flex-direction: column-reverse;
-      align-items: center;
+      align-items: end;
       gap: var(--g-8);
       margin-top: var(--m-16);
     }
   }
-  &__date {
+  &__company,
+  &__link {
     font-size: var(--fs-14);
     line-height: var(--lh-18);
+
+    @media (max-width: 768px) {
+      font-size: var(--fs-12);
+      line-height: initial;
+    }
+  }
+
+  &__link {
+    position: relative;
+    z-index: 1;
+
+    &:hover {
+      color: var(--green);
+    }
   }
 }
 </style>

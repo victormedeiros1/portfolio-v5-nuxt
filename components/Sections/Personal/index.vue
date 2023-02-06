@@ -18,6 +18,7 @@
           :paragraphs="projects[projectSelected].paragraphs"
           :company="projects[projectSelected].company"
           :href="projects[projectSelected].href"
+          :repository="projects[projectSelected].repository"
         />
       </div>
     </div>
@@ -45,8 +46,8 @@ export default {
           title: 'TO-DO NOW',
           src: '/images/banners/to-do-now.jpg',
           alt: 'To-do app project banner',
-          company: 'Hox.rs - 2021',
           href: 'https://to-do-now.netlify.app/',
+          repository: 'https://github.com/victormedeiros1/to-do-now',
           paragraphs: [
             {
               id: 0,
@@ -65,8 +66,8 @@ export default {
           title: 'SOUND GLORY',
           src: '/images/banners/sound-glory.jpg',
           alt: 'Sound Glory project banner',
-          company: 'Hox.rs - 2021',
           href: 'https://sound-glory.netlify.app/',
+          repository: 'https://github.com/victormedeiros1/sound-glory',
           paragraphs: [
             {
               id: 0,
