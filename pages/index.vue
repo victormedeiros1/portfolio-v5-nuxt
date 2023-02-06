@@ -35,29 +35,14 @@ export default {
     title: 'José Victor | Frontend Developer',
     meta: [
       {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary_large_image',
-      },
-      {
         hid: 'og:title',
-        property: 'og:title',
-        content: 'José Victor | Frontend Developer',
-      },
-      {
-        hid: 'twitter:title',
         property: 'og:title',
         content: 'José Victor | Frontend Developer',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: ogImage,
-      },
-      {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: ogImage,
+        ccontent: 'https://www.movimentoluzlivre.com.br' + ogImage,
       },
       {
         hid: 'og:description',
@@ -66,19 +51,8 @@ export default {
           'Hi, I’m José Victor, frontend developer. I started programming in 2017. I want to be a great developer and I am every day studying and striving more and more to become one.',
       },
       {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content:
-          'Hi, I’m José Victor, frontend developer. I started programming in 2017. I want to be a great developer and I am every day studying and striving more and more to become one.',
-      },
-      {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://www.josevictor.dev/',
-      },
-      {
-        hid: 'twitter:url',
-        name: 'twitter:url',
         content: 'https://www.josevictor.dev/',
       },
       {
@@ -89,6 +63,33 @@ export default {
       },
       {
         keywords: 'portfolio, frontend',
+      },
+      // ==============================================================================
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:title',
+        property: 'og:title',
+        content: 'José Victor | Frontend Developer',
+      },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: 'https://www.josevictor.dev/',
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: 'https://www.josevictor.dev/' + ogImage,
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Hi, I’m José Victor, frontend developer. I started programming in 2017. I want to be a great developer and I am every day studying and striving more and more to become one.',
       },
     ],
   },
