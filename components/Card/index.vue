@@ -62,15 +62,10 @@ export default {
   &__corner {
     position: absolute;
     content: '';
-    width: 25rem;
-    height: 25rem;
+    width: 12.5rem;
+    height: 12.5rem;
     border-top: 1px solid var(--dark);
     border-left: 1px solid var(--dark);
-
-    @media (max-width: 768px) {
-      width: 12.5rem;
-      height: 12.5rem;
-    }
 
     &--top {
       top: 0;
