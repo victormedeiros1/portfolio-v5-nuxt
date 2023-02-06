@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
+    <Bars small dark end />
     <ul class="navbar__list">
-      <Bars small dark end />
       <li class="navbar__item">
         <NuxtLink to="#hero">HERO</NuxtLink>
       </li>
@@ -23,8 +23,8 @@
       <li class="navbar__item">
         <NuxtLink to="#contact">CONTACT</NuxtLink>
       </li>
-      <Bars small dark reverse end />
     </ul>
+    <Bars small dark reverse end />
   </nav>
 </template>
 
@@ -40,6 +40,9 @@ export default {
   top: 1rem;
   right: 1rem;
   z-index: 9999;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 
   &__list {
     display: flex;
