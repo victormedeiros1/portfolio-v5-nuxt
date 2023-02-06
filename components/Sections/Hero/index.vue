@@ -3,7 +3,7 @@
     <div class="hero__content">
       <h1 class="hero__title">JOSÉ VICTOR</h1>
       <h2 class="hero__subtitle">FRONTEND DEVELOPER</h2>
-      <CTA href="#">DISCOVER</CTA>
+      <CTA href="#about" aria-label="Scroll to About section">DISCOVER</CTA>
     </div>
     <hr class="hero__divider" />
     <div class="hero__brand">

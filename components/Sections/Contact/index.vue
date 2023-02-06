@@ -2,7 +2,9 @@
   <section id="contact" class="contact">
     <h3 class="contact__title">I'M OPEN TO <br />NEW OPPORTUNITIES</h3>
     <h4 class="contact__subtitle">LET’S BUILD SOMETHING TOGETHER?</h4>
-    <CTA href="mailto:josevictordev@gmail.com">SAY HELLO</CTA>
+    <CTA href="mailto:josevictordev@gmail.com" aria-label="Send me a email"
+      >SAY HELLO</CTA
+    >
     <div class="contact__social-medias">
       <SocialMedias />
     </div>

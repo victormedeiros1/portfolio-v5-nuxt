@@ -26,6 +26,10 @@ a {
   display: inherit;
 }
 
+a:focus {
+  outline: 2px solid var(--green);
+}
+
 @media (max-width: 768px) {
   main,
   section,

@@ -1,5 +1,7 @@
 <template>
-  <a class="CTA" :href="href" :target="target"><slot /></a>
+  <a class="CTA" :href="href" :arial-label="ariaLabel" :target="target"
+    ><slot
+  /></a>
 </template>
 
 <script>
@@ -13,6 +15,10 @@ export default {
     target: {
       type: String,
       default: '_self',
+    },
+    ariaLabel: {
+      type: String,
+      default: '',
     },
   },
 }

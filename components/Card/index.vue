@@ -8,9 +8,16 @@
       </Paragraph>
     </div>
     <div class="card__footer">
-      <CTA :href="href" target="_blank">VISIT</CTA>
+      <CTA :href="href" aria-label="Go to live project" target="_blank"
+        >VISIT</CTA
+      >
       <span v-if="company" class="card__company">{{ company }}</span>
-      <a v-if="repository" class="card__link" :href="repository" target="_blank"
+      <a
+        v-if="repository"
+        class="card__link"
+        :href="repository"
+        aria-label="Go to repository on GitHub"
+        target="_blank"
         >REPOSITORY</a
       >
     </div>
