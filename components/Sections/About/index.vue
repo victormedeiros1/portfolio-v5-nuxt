@@ -22,7 +22,12 @@
       >
     </div>
     <div class="about__photo">
-      <img src="/images/photo.png" alt="José Victor" />
+      <img
+        src="/images/photo.png"
+        alt="José Victor"
+        width="500px"
+        height="650px"
+      />
     </div>
   </section>
 </template>
@@ -73,6 +78,7 @@ export default {
       max-width: 31.25rem;
       min-width: 25rem;
       width: 100%;
+      height: initial;
 
       @media (max-width: 768px) {
         min-width: initial;

@@ -3,7 +3,9 @@
     <img
       class="skills__art"
       src="/images/svg/skills.svg"
-      alt="image with my skills"
+      alt="Diagram with my skills"
+      width="950px"
+      height="788px"
     />
   </section>
 </template>
@@ -17,8 +19,10 @@ export default {
 <style lang="scss" scoped>
 .skills {
   text-align: center;
+
   &__art {
     width: 100%;
+    height: initial;
     max-width: 59.375rem;
   }
 }
