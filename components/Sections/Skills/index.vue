@@ -1,6 +1,10 @@
 <template>
   <section id="skills" class="skills">
-    <img class="skills__art" src="/images/svg/skills.svg" />
+    <img
+      class="skills__art"
+      src="/images/svg/skills.svg"
+      alt="image with my skills"
+    />
   </section>
 </template>
 
