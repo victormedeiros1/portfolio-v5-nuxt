@@ -3,54 +3,22 @@
     <Heading>WORKS</Heading>
     <div class="works__content">
       <div class="banners">
-        <Banner src="/images/banners/netflix.jpg" alt="Netflix Tudum" />
         <Banner
-          src="/images/banners/spotify.jpg"
-          alt="Spotify Top Podcasters"
-        />
-        <Banner
-          src="/images/banners/omega.jpg"
-          alt="Omega Movimento Luz Livre"
+          v-for="{ id, src, alt } in projects"
+          :key="id"
+          :data-ref="id"
+          :src="src"
+          :alt="alt"
+          @click.native="projectSelected = id"
         />
       </div>
-      <div class="card">
-        <div class="card__corner card__corner--top"></div>
-        <div class="card__title">NETFLIX TUDUM</div>
-        <div class="card__body">
-          <Paragraph
-            >Tudum is an international event that announces several news about
-            Netflix projects. In 2021, the 3rd edition took place to celebrate
-            10 years of Netflix in Brazil. Almanac Tudum was launched together
-            with the event, it is a book with exclusive material about the
-            company's productions.</Paragraph
-          >
-          <Paragraph
-            >Hox.rs was responsible for implementing a shorter “virtual version”
-            of Almanac Tudum. Through Figma we had access to the project screens
-            and started development. I worked as a front-end developer creating
-            the code for most of the site's pages.
-          </Paragraph>
-          <Paragraph
-            >As it was my first time working in a company, I couldn't believe
-            the moment I saw who the project was for. When I entered Figma and
-            saw that someone from Netflix was working there “on my side”, the
-            feeling was of euphoria.
-          </Paragraph>
-          <Paragraph
-            >Working together with a team of developers, learning from them and
-            creating something for such a big name was wonderful.
-          </Paragraph>
-          <Paragraph
-            >Of all the projects I've participated so far, this is without a
-            doubt the one I love the most, because it was where it all started
-            and where I was sure it was in this world that I wanted to work.
-          </Paragraph>
-        </div>
-        <div class="card__footer">
-          <CTA>VISIT</CTA>
-          <span class="card__date">Hox.rs - 2021</span>
-        </div>
-        <div class="card__corner card__corner--bottom"></div>
+      <div class="card-wrapper">
+        <Card
+          :title="projects[projectSelected].title"
+          :paragraphs="projects[projectSelected].paragraphs"
+          :company="projects[projectSelected].company"
+          :href="projects[projectSelected].href"
+        />
       </div>
     </div>
   </section>
@@ -59,16 +27,116 @@
 <script>
 import Heading from '@/components/Heading'
 import Banner from '@/components/Banner'
-import Paragraph from '@/components/Paragraph'
-import CTA from '@/components/CTA'
+import Card from '@/components/Card'
 
 export default {
   name: 'Works',
   components: {
     Heading,
     Banner,
-    Paragraph,
-    CTA,
+    Card,
+  },
+  data() {
+    return {
+      projectSelected: 0,
+      projects: [
+        {
+          id: 0,
+          title: 'NETFLIX TUDUM',
+          src: '/images/banners/netflix.jpg',
+          alt: 'Netflix project banner',
+          company: 'Hox.rs - 2021',
+          href: 'https://www.tudumnetflix.com.br/',
+          paragraphs: [
+            {
+              id: 0,
+              paragraph:
+                "Tudum is an international event that announces several news about Netflix projects. In 2021, the 3rd edition took place to celebrate 10 years of Netflix in Brazil. Almanac Tudum was launched together with the event, it is a book with exclusive material about the company's productions.",
+            },
+            {
+              id: 1,
+              paragraph:
+                "Hox.rs was responsible for implementing a shorter “virtual version” of Almanac Tudum. Through Figma we had access to the project screens and started development. I worked as a front-end developer creating the code for most of the site's pages.",
+            },
+            {
+              id: 2,
+              paragraph:
+                "As it was my first time working in a company, I couldn't believe the moment I saw who the project was for. When I entered Figma and saw that someone from Netflix was working there “on my side”, the feeling was of euphoria.",
+            },
+            {
+              id: 3,
+              paragraph:
+                'Working together with a team of developers, learning from them and creating something for such a big name was wonderful.',
+            },
+            {
+              id: 4,
+              paragraph:
+                "Of all the projects I've participated so far, this is without a doubt the one I love the most, because it was where it all started and where I was sure it was in this world that I wanted to work.",
+            },
+          ],
+        },
+        {
+          id: 1,
+          title: 'SPOTIFY TOP PODCASTERS',
+          src: '/images/banners/spotify.jpg',
+          alt: 'Spotify project banner',
+          company: 'Hox.rs - 2021',
+          href: 'https://spotifytoppodcasters.byspotify.com/',
+          paragraphs: [
+            {
+              id: 0,
+              paragraph:
+                'A project to celebrate the content creators who managed to reach the Top 10 Podcasts in Brazil.',
+            },
+            {
+              id: 1,
+              paragraph:
+                'I participated in two stages in this project, first in the development of the page where I built much of the body of the site, we accessed the data from an endpoint and made the listing showing its information.',
+            },
+            {
+              id: 2,
+              paragraph:
+                "The second stage was more interesting and challenging, I had never worked with email marketing and it seemed to me to be something very simple, until I discovered the limitations at the code level, for example, the structure of the email had to be made only with tables, the css all inline , some css attributes and html tags didn't work, the images would have to be placed in the cloud for display and several other limitations that I discovered over time.",
+            },
+            {
+              id: 3,
+              paragraph:
+                'Studying further I found that each email service can interpret its code in a different way, a css attribute could work in Gmail but not in Outlook. So it was necessary to do several tests.',
+            },
+            {
+              id: 4,
+              paragraph:
+                'Again I was shocked to learn that the project was for none other than Spotify and even more shocked when I went to implement the emails and realized that they would be sent to podcasts that I listened to daily, to the biggest in the country. It was a mixture of endless happiness and fear, there was a big responsibility there, I never did so many tests in my life until I was sure that everything was perfect hahahaha.',
+            },
+          ],
+        },
+        {
+          id: 2,
+          title: 'OMEGA',
+          src: '/images/banners/omega.jpg',
+          alt: 'Omega project banner',
+          company: 'Hox.rs - 2021',
+          href: 'https://www.movimentoluzlivre.com.br/',
+          paragraphs: [
+            {
+              id: 0,
+              paragraph:
+                'Omega Energia came up with the premise of accelerating the opening of the Free Energy Market to all Brazilians and with that they created The Free Light Movement.',
+            },
+            {
+              id: 1,
+              paragraph:
+                'The idea of this application was a “fullpage” style website, there is no scrolling, only a menu where you can navigate between the sections of the page and view the information. It was my first time doing a site in this style, but I did well and I really liked it.    ',
+            },
+            {
+              id: 2,
+              paragraph:
+                "The second stage was more interesting and challenging, I had never worked with email marketing and it seemed to me to be something very simple, until I discovered the limitations at the code level, for example, the structure of the email had to be made only with tables, the css all inline , some css attributes and html tags didn't work, the images would have to be placed in the cloud for display and several other limitations that I discovered over time.",
+            },
+          ],
+        },
+      ],
+    }
   },
 }
 </script>
@@ -84,6 +152,7 @@ export default {
     }
 
     .banners {
+      cursor: pointer;
       width: 35%;
       overflow: hidden;
       position: relative;
@@ -93,69 +162,8 @@ export default {
         padding: var(--p-48) 0;
       }
     }
-
-    .card {
+    .card-wrapper {
       width: 65%;
-      position: relative;
-      height: fit-content;
-      margin-top: 9rem;
-      padding: var(--p-32);
-
-      @media (max-width: 768px) {
-        margin-top: var(--m-64);
-        padding: var(--p-12);
-      }
-
-      &__corner {
-        position: absolute;
-        content: '';
-        width: 25rem;
-        height: 25rem;
-        border-top: 1px solid var(--dark);
-        border-left: 1px solid var(--dark);
-
-        @media (max-width: 768px) {
-          width: 12.5rem;
-          height: 12.5rem;
-        }
-
-        &--top {
-          top: 0;
-          left: 0;
-        }
-        &--bottom {
-          right: 0;
-          bottom: 0;
-          transform: rotate(180deg);
-        }
-      }
-
-      &__title {
-        font-size: var(--fs-24);
-        font-weight: 700;
-        margin-bottom: var(--m-16);
-
-        @media (max-width: 768px) {
-          font-size: var(--fs-16);
-        }
-      }
-
-      &__footer {
-        display: flex;
-        justify-content: space-between;
-        margin-top: var(--m-32);
-
-        @media (max-width: 768px) {
-          flex-direction: column-reverse;
-          align-items: center;
-          gap: var(--g-8);
-          margin-top: var(--m-16);
-        }
-      }
-      &__date {
-        font-size: var(--fs-14);
-        line-height: var(--lh-18);
-      }
     }
   }
 }
