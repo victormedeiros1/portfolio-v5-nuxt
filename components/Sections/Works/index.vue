@@ -43,7 +43,7 @@ export default {
         {
           id: 0,
           title: 'NETFLIX TUDUM',
-          src: '/images/banners/netflix.jpg',
+          src: '/images/banners/netflix.webp',
           alt: 'Netflix project banner',
           company: 'Hox.rs - 2021',
           href: 'https://www.tudumnetflix.com.br/',
@@ -78,7 +78,7 @@ export default {
         {
           id: 1,
           title: 'SPOTIFY TOP PODCASTERS',
-          src: '/images/banners/spotify.jpg',
+          src: '/images/banners/spotify.webp',
           alt: 'Spotify project banner',
           company: 'Hox.rs - 2021',
           href: 'https://spotifytoppodcasters.byspotify.com/',
@@ -113,7 +113,7 @@ export default {
         {
           id: 2,
           title: 'OMEGA',
-          src: '/images/banners/omega.jpg',
+          src: '/images/banners/omega.webp',
           alt: 'Omega project banner',
           company: 'Hox.rs - 2021',
           href: 'https://www.movimentoluzlivre.com.br/',

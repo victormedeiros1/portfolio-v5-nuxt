@@ -23,7 +23,7 @@
     </div>
     <div class="about__photo">
       <img
-        src="/images/photo.png"
+        src="/images/photo.webp"
         alt="José Victor"
         width="500px"
         height="650px"

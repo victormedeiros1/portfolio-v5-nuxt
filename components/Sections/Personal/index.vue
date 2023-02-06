@@ -44,7 +44,7 @@ export default {
         {
           id: 0,
           title: 'TO-DO NOW',
-          src: '/images/banners/to-do-now.jpg',
+          src: '/images/banners/to-do-now.webp',
           alt: 'To-do app project banner',
           href: 'https://to-do-now.netlify.app/',
           repository: 'https://github.com/victormedeiros1/to-do-now',
@@ -64,7 +64,7 @@ export default {
         {
           id: 1,
           title: 'SOUND GLORY',
-          src: '/images/banners/sound-glory.jpg',
+          src: '/images/banners/sound-glory.webp',
           alt: 'Sound Glory project banner',
           href: 'https://sound-glory.netlify.app/',
           repository: 'https://github.com/victormedeiros1/sound-glory',
