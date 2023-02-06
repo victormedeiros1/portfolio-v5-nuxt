@@ -2,6 +2,7 @@
   <div :class="`social-medias ${vertical && 'social-medias--vertical'}`">
     <a
       href="https://www.instagram.com/victor_mdrss/"
+      aria-label="Visit my Instagram profile"
       rel="author"
       target="_blank"
     >
@@ -10,18 +11,25 @@
     <div v-if="!vertical" class="social-medias__divider"></div>
     <a
       href="https://www.linkedin.com/in/josevictordev/"
+      aria-label="Visit my professional profile on LinkedIn"
       rel="author"
       target="_blank"
     >
       <LinkedIn />
     </a>
     <div v-if="!vertical" class="social-medias__divider"></div>
-    <a href="https://github.com/victormedeiros1" rel="author" target="_blank">
+    <a
+      href="https://github.com/victormedeiros1"
+      aria-label="Visit my GitHub profile to see more projects"
+      rel="author"
+      target="_blank"
+    >
       <GitHub />
     </a>
     <div v-if="!vertical" class="social-medias__divider"></div>
     <a
       href="https://www.figma.com/@victormedeiros1"
+      aria-label="Visit my Figma profile to see interfaces of my projects"
       rel="author"
       target="_blank"
     >
