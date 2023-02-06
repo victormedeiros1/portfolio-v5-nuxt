@@ -22,10 +22,11 @@ export default {
 .banner {
   width: 180%;
   max-width: 37.5rem;
-  transform: translateX(-17%) translateY(0) rotate(20deg);
+  transform: translateX(-11%) translateY(0) rotate(20deg);
 
   @media (max-width: 768px) {
-    transform: translateX(-23%) translateY(0) rotate(20deg);
+    width: 150%;
+    transform: translateX(-17%) translateY(0) rotate(20deg);
     margin-top: -1vw;
   }
 }

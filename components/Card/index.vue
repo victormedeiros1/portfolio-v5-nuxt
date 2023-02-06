@@ -51,11 +51,11 @@ export default {
   width: 100%;
   position: relative;
   height: fit-content;
-  margin-top: 9.4rem;
+  margin-top: 10.8rem;
   padding: var(--p-32);
 
   @media (max-width: 768px) {
-    margin-top: var(--m-64);
+    margin-top: var(--m-80);
     padding: var(--p-12);
   }
 

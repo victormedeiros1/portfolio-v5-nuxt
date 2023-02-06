@@ -1,7 +1,7 @@
 <template>
-  <section id="works" class="works">
-    <Heading>WORKS</Heading>
-    <div class="works__content">
+  <section id="personal" class="personal">
+    <Heading>PERSONAL</Heading>
+    <div class="personal__content">
       <div class="banners">
         <Banner
           v-for="{ id, src, alt } in projects"
@@ -30,7 +30,7 @@ import Banner from '@/components/Banner'
 import Card from '@/components/Card'
 
 export default {
-  name: 'Works',
+  name: 'Personal',
   components: {
     Heading,
     Banner,
@@ -42,11 +42,11 @@ export default {
       projects: [
         {
           id: 0,
-          title: 'NETFLIX TUDUM',
-          src: '/images/banners/netflix.jpg',
-          alt: 'Netflix project banner',
+          title: 'TO-DO NOW',
+          src: '/images/banners/to-do-now.jpg',
+          alt: 'To-do app project banner',
           company: 'Hox.rs - 2021',
-          href: 'https://www.tudumnetflix.com.br/',
+          href: 'https://to-do-now.netlify.app/',
           paragraphs: [
             {
               id: 0,
@@ -77,11 +77,11 @@ export default {
         },
         {
           id: 1,
-          title: 'SPOTIFY TOP PODCASTERS',
-          src: '/images/banners/spotify.jpg',
-          alt: 'Spotify project banner',
+          title: 'SOUND GLORY',
+          src: '/images/banners/sound-glory.jpg',
+          alt: 'Sound Glory project banner',
           company: 'Hox.rs - 2021',
-          href: 'https://spotifytoppodcasters.byspotify.com/',
+          href: 'https://sound-glory.netlify.app/',
           paragraphs: [
             {
               id: 0,
@@ -110,31 +110,6 @@ export default {
             },
           ],
         },
-        {
-          id: 2,
-          title: 'OMEGA',
-          src: '/images/banners/omega.jpg',
-          alt: 'Omega project banner',
-          company: 'Hox.rs - 2021',
-          href: 'https://www.movimentoluzlivre.com.br/',
-          paragraphs: [
-            {
-              id: 0,
-              paragraph:
-                'Omega Energia came up with the premise of accelerating the opening of the Free Energy Market to all Brazilians and with that they created The Free Light Movement.',
-            },
-            {
-              id: 1,
-              paragraph:
-                'The idea of this application was a “fullpage” style website, there is no scrolling, only a menu where you can navigate between the sections of the page and view the information. It was my first time doing a site in this style, but I did well and I really liked it.    ',
-            },
-            {
-              id: 2,
-              paragraph:
-                "The second stage was more interesting and challenging, I had never worked with email marketing and it seemed to me to be something very simple, until I discovered the limitations at the code level, for example, the structure of the email had to be made only with tables, the css all inline , some css attributes and html tags didn't work, the images would have to be placed in the cloud for display and several other limitations that I discovered over time.",
-            },
-          ],
-        },
       ],
     }
   },
@@ -142,7 +117,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.works {
+.personal {
   &__content {
     display: flex;
     gap: var(--g-48);

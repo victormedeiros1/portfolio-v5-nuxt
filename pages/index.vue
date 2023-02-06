@@ -4,6 +4,7 @@
     <Hero />
     <About />
     <Works />
+    <Personal />
     <Skills />
     <Contact />
   </div>
@@ -14,6 +15,7 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Sections/Hero'
 import About from '@/components/Sections/About'
 import Works from '@/components/Sections/Works'
+import Personal from '@/components/Sections/Personal'
 import Skills from '@/components/Sections/Skills'
 import Contact from '@/components/Sections/Contact'
 
@@ -24,6 +26,7 @@ export default {
     Hero,
     About,
     Works,
+    Personal,
     Skills,
     Contact,
   },
