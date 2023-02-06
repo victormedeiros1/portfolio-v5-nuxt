@@ -57,7 +57,7 @@ export default {
       },
       {
         hid: 'description',
-        property: 'description',
+        name: 'description',
         content:
           'Hi, I’m José Victor, frontend developer. I started programming in 2017. I want to be a great developer and I am every day studying and striving more and more to become one.',
       },
