@@ -2,7 +2,7 @@
   <main id="hero" class="hero">
     <div class="hero__content">
       <h1 class="hero__title">JOSÉ VICTOR</h1>
-      <h2 class="hero__subtitle">FRONT-END DEVELOPER</h2>
+      <h2 class="hero__subtitle">FRONTEND DEVELOPER</h2>
       <CTA href="#">DISCOVER</CTA>
     </div>
     <hr class="hero__divider" />

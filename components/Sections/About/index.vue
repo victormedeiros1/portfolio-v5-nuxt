@@ -9,7 +9,7 @@
         took a real rush when I got to the web development part.</Paragraph
       >
       <Paragraph
-        >When I got to know the front-end and saw the infinite sea of
+        >When I got to know the frontend and saw the infinite sea of
         possibilities, I fell in love, I always liked the visual and creative
         side of things, so I started to interact with the community, working as
         a team, meeting and exchanging knowledge with new people.

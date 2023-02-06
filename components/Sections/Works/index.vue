@@ -56,7 +56,7 @@ export default {
             {
               id: 1,
               paragraph:
-                "Hox.rs was responsible for implementing a shorter “virtual version” of Almanac Tudum. Through Figma we had access to the project screens and started development. I worked as a front-end developer creating the code for most of the site's pages.",
+                "Hox.rs was responsible for implementing a shorter “virtual version” of Almanac Tudum. Through Figma we had access to the project screens and started development. I worked as a frontend developer creating the code for most of the site's pages.",
             },
             {
               id: 2,
