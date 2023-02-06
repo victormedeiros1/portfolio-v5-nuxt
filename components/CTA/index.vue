@@ -1,5 +1,5 @@
 <template>
-  <a class="CTA" :href="href"><slot /></a>
+  <a class="CTA" :href="href" :target="target"><slot /></a>
 </template>
 
 <script>
@@ -9,6 +9,10 @@ export default {
     href: {
       type: String,
       default: '#',
+    },
+    target: {
+      type: String,
+      default: '_self',
     },
   },
 }
