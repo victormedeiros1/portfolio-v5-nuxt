@@ -15,8 +15,8 @@ export default {
   margin-bottom: var(--m-16);
 
   @media (max-width: 768px) {
-    font-size: var(--fs-10);
-    line-height: var(--fs-14);
+    font-size: var(--fs-12);
+    line-height: var(--fs-16);
   }
 }
 </style>
