@@ -2,7 +2,7 @@
   <section id="skills" class="skills">
     <img
       class="skills__art"
-      src="/images/svg/skills.svg"
+      src="/images/skills.webp"
       alt="Diagram with my skills"
       width="950px"
       height="788px"

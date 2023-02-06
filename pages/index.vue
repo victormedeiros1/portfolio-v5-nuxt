@@ -18,7 +18,7 @@ import Works from '@/components/Sections/Works'
 import Personal from '@/components/Sections/Personal'
 import Skills from '@/components/Sections/Skills'
 import Contact from '@/components/Sections/Contact'
-import ogImage from '~/static/images/ogImage.jpg'
+import ogImage from '~/static/images/ogImage.webp'
 
 export default {
   name: 'Index',
