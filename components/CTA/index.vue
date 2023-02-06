@@ -20,6 +20,8 @@ export default {
 
 <style lang="scss" scoped>
 .CTA {
+  position: relative;
+  z-index: 1;
   width: fit-content;
   display: inline-block;
   color: var(--dark);
