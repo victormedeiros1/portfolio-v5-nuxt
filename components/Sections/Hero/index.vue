@@ -73,6 +73,9 @@ export default {
       margin: 0 auto var(--m-16) auto;
     }
   }
+  &__brand {
+    opacity: var(--logo-opacity);
+  }
   &__subtitle {
     color: var(--green);
     font-size: var(--fs-32);
