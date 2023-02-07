@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="contact">
+  <footer id="contact" class="contact">
     <h3 class="contact__title" data-aos="fade-right" data-aos-delay="200">
       I'M OPEN TO <br />NEW OPPORTUNITIES
     </h3>
@@ -16,7 +16,8 @@
     <div class="contact__social-medias">
       <SocialMedias data-aos="fade-right" data-aos-delay="500" />
     </div>
-  </section>
+    <div class="contact__copyright">Copyright © 2023 | José Victor</div>
+  </footer>
 </template>
 
 <script>
@@ -34,6 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,6 +68,15 @@ export default {
   }
   &__social-medias {
     margin-top: var(--m-80);
+  }
+  &__copyright {
+    font-size: var(--fs-14);
+    position: absolute;
+    bottom: 0.5rem;
+
+    @media (max-width: 768px) {
+      font-size: var(--fs-12);
+    }
   }
 }
 </style>
