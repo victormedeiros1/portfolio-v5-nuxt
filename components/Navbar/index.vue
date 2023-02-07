@@ -12,10 +12,10 @@
         <NuxtLink to="#works">WORKS</NuxtLink>
       </li>
       <li class="navbar__item">
-        <NuxtLink to="#projects">PROJECTS</NuxtLink>
+        <button class="navbar__theme" @click="toggleTheme">THEME</button>
       </li>
       <li class="navbar__item">
-        <NuxtLink to="">THEME</NuxtLink>
+        <NuxtLink to="#projects">PROJECTS</NuxtLink>
       </li>
       <li class="navbar__item">
         <NuxtLink to="#skills">SKILLS</NuxtLink>
@@ -31,6 +31,12 @@
 <script>
 export default {
   name: 'Navbar',
+  methods: {
+    toggleTheme() {
+      const html = document.querySelector('html')
+      html.classList.toggle('dark-mode')
+    },
+  },
 }
 </script>
 
@@ -50,18 +56,24 @@ export default {
     align-items: flex-end;
     gap: var(--g-4);
     list-style: none;
-    margin: 0;
+    margin: var(--m-8) 0;
   }
   &__item {
     font-size: var(--fs-14);
-    font-weight: 700;
     width: fit-content;
 
     @media (max-width: 768px) {
       font-size: var(--fs-12);
     }
 
-    a {
+    button {
+      background: none;
+      border: none;
+    }
+
+    a,
+    button {
+      font-weight: 600;
       transition: 0.1s;
       text-decoration: none;
       text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
