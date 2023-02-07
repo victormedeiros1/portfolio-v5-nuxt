@@ -5,6 +5,8 @@
   --green: #27ca54;
   --bg-white: url('~/static/images/bg-white.webp');
   --bg-dark: url('~/static/images/bg-dark.webp');
+  --logo-opacity: 1;
+  --logo-shadow: drop-shadow(0 0 6px #000);
 }
 .dark-mode:root {
   --dark: #eeeee9;
@@ -13,4 +15,6 @@
   --green: #27ca54;
   --bg-white: url('~/static/images/bg-dark.webp');
   --bg-dark: url('~/static/images/bg-white.webp');
+  --logo-opacity: 0.3;
+  --logo-shadow: drop-shadow(0 0 10px #000);
 }

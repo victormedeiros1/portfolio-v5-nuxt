@@ -26,10 +26,11 @@ export default {
 
 <style lang="scss" scoped>
 .brand {
+  opacity: var(--logo-opacity);
   width: 100%;
   max-width: 25rem;
   max-height: 25rem;
-  filter: drop-shadow(0 0 10px #000);
+  filter: var(--logo-shadow);
 
   @media (max-width: 768px) {
     max-width: 12.5rem;
