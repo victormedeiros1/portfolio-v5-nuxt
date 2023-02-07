@@ -29,6 +29,7 @@ export default {
   width: 100%;
   max-width: 25rem;
   max-height: 25rem;
+  filter: drop-shadow(0 0 10px #000);
 
   @media (max-width: 768px) {
     max-width: 12.5rem;
