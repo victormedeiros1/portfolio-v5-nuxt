@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar" data-aos="left" data-aos-delay="800">
+  <nav class="navbar">
     <Bars small dark end />
     <ul class="navbar__list">
       <li class="navbar__item">
