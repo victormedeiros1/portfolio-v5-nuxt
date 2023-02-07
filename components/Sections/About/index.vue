@@ -1,27 +1,29 @@
 <template>
   <section id="about" class="about">
     <div class="about__content">
-      <Heading>ABOUT</Heading>
-      <h4 class="about__subtitle">NICE TO MEET YOU!</h4>
-      <Paragraph
+      <Heading data-aos="fade-right" data-aos-delay="200">ABOUT</Heading>
+      <h4 class="about__subtitle" data-aos="fade-right" data-aos-delay="300">
+        NICE TO MEET YOU!
+      </h4>
+      <Paragraph data-aos="fade-right" data-aos-delay="400"
         >I started programming in 2017 and graduated as a Computer Technician at
         the IFRN. I liked to program, it was an interesting challenge, but I
         took a real rush when I got to the web development part.</Paragraph
       >
-      <Paragraph
+      <Paragraph data-aos="fade-right" data-aos-delay="500"
         >When I got to know the frontend and saw the infinite sea of
         possibilities, I fell in love, I always liked the visual and creative
         side of things, so I started to interact with the community, working as
         a team, meeting and exchanging knowledge with new people.
         essential.</Paragraph
       >
-      <Paragraph
+      <Paragraph data-aos="fade-right" data-aos-delay="600"
         >Today, I'm studying Information Systems at UFRN. I want to be a great
         developer and I am every day studying and striving more and more to
         become one.</Paragraph
       >
     </div>
-    <div class="about__photo">
+    <div class="about__photo" data-aos="fade-left" data-aos-delay="700">
       <img
         src="/images/photo.webp"
         alt="José Victor"

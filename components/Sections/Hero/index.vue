@@ -1,16 +1,26 @@
 <template>
   <main id="hero" class="hero">
     <div class="hero__content">
-      <h1 class="hero__title">JOSÉ VICTOR</h1>
-      <h2 class="hero__subtitle">FRONTEND DEVELOPER</h2>
-      <CTA href="#about" aria-label="Scroll to About section">DISCOVER</CTA>
+      <h1 class="hero__title" data-aos="fade-right" data-aos-delay="300">
+        JOSÉ VICTOR
+      </h1>
+      <h2 class="hero__subtitle" data-aos="fade-right" data-aos-delay="400">
+        FRONTEND DEVELOPER
+      </h2>
+      <CTA
+        href="#about"
+        aria-label="Scroll to About section"
+        data-aos="fade-right"
+        data-aos-delay="500"
+        >DISCOVER</CTA
+      >
     </div>
-    <hr class="hero__divider" />
+    <hr class="hero__divider" data-aos="zoom-in" data-aos-delay="600" />
     <div class="hero__brand">
-      <Brand />
+      <Brand data-aos="fade-down" data-aos-delay="700" />
     </div>
     <div class="hero__social-medias">
-      <SocialMedias vertical />
+      <SocialMedias vertical data-aos="fade-down" data-aos-delay="200" />
     </div>
   </main>
 </template>

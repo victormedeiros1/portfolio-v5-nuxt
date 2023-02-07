@@ -6,6 +6,8 @@
       alt="Diagram with my skills"
       width="950px"
       height="788px"
+      data-aos="zoom-in"
+      data-aos-delay="200"
     />
   </section>
 </template>

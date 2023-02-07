@@ -1,12 +1,20 @@
 <template>
   <section id="contact" class="contact">
-    <h3 class="contact__title">I'M OPEN TO <br />NEW OPPORTUNITIES</h3>
-    <h4 class="contact__subtitle">LET’S BUILD SOMETHING TOGETHER?</h4>
-    <CTA href="mailto:josevictordev@gmail.com" aria-label="Send me a email"
+    <h3 class="contact__title" data-aos="fade-right" data-aos-delay="200">
+      I'M OPEN TO <br />NEW OPPORTUNITIES
+    </h3>
+    <h4 class="contact__subtitle" data-aos="fade-left" data-aos-delay="300">
+      LET’S BUILD SOMETHING TOGETHER?
+    </h4>
+    <CTA
+      href="mailto:josevictordev@gmail.com"
+      aria-label="Send me a email"
+      data-aos="fade-left"
+      data-aos-delay="400"
       >SAY HELLO</CTA
     >
     <div class="contact__social-medias">
-      <SocialMedias />
+      <SocialMedias data-aos="fade-right" data-aos-delay="500" />
     </div>
   </section>
 </template>
