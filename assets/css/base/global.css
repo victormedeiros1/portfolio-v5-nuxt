@@ -4,9 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--dark);
+  transition: 0.3s;
 }
 html {
-  transition: 0.3s;
   scroll-behavior: smooth;
 }
 
