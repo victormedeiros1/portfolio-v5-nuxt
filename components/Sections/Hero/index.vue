@@ -7,13 +7,9 @@
       <h2 class="hero__subtitle" data-aos="fade-right" data-aos-delay="400">
         FRONTEND DEVELOPER
       </h2>
-      <CTA
-        href="#about"
-        aria-label="Scroll to About section"
-        data-aos="fade-right"
-        data-aos-delay="500"
-        >DISCOVER</CTA
-      >
+      <div data-aos="fade-right" data-aos-delay="500">
+        <CTA href="#about" aria-label="Scroll to About section">DISCOVER</CTA>
+      </div>
     </div>
     <hr class="hero__divider" data-aos="zoom-in" data-aos-delay="600" />
     <div class="hero__brand">
