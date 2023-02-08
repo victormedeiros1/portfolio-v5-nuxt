@@ -35,7 +35,18 @@ export default {
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
     '@nuxt/image',
+    '@nuxtjs/google-fonts',
   ],
+
+  googleFonts: {
+    preload: true,
+    preconnect: true,
+    families: {
+      'Concert+One': true,
+      Poppins: [300, 400, 600, 700, 900],
+      Lato: [100, 300],
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
