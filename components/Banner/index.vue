@@ -1,5 +1,12 @@
 <template>
-  <nuxt-img class="banner" :src="src" :alt="alt" loading="lazy" format="webp" />
+  <nuxt-img
+    class="banner"
+    :src="src"
+    :alt="alt"
+    sizes="xs:500px md:620px lg:800px"
+    loading="lazy"
+    format="webp"
+  />
 </template>
 
 <script>
