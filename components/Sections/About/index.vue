@@ -29,8 +29,6 @@
         src="/images/photo.webp"
         alt="José Victor photo"
         sizes="xs:300px md:400px lg:500px"
-        loading="lazy"
-        format="webp"
       />
     </div>
   </section>

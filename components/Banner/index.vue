@@ -4,8 +4,6 @@
     :src="src"
     :alt="alt"
     sizes="xs:500px md:620px lg:800px"
-    loading="lazy"
-    format="webp"
   />
 </template>
 

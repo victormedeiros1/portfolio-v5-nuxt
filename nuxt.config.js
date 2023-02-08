@@ -26,6 +26,9 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: ['@nuxtjs/eslint-module', '@nuxt/image'],
+
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
@@ -37,6 +40,16 @@ export default {
   ],
 
   image: {
+    domains: ['josevictor.dev'],
+    presets: {
+      default: {
+        modifiers: {
+          loading: 'lazy',
+          quality: 95,
+          format: 'webp',
+        },
+      },
+    },
     // The screen sizes predefined by `@nuxt/image`:
     screens: {
       xs: 320,
@@ -55,9 +68,6 @@ export default {
       Lato: [100, 300],
     },
   },
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

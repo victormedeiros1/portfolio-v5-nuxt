@@ -5,8 +5,6 @@
       src="/images/skills.webp"
       alt="Diagram with my skills"
       sizes="xs:600px sm: 720px md:970px"
-      loading="lazy"
-      format="webp"
     />
   </section>
 </template>
