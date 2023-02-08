@@ -24,11 +24,12 @@
       >
     </div>
     <div class="about__photo" data-aos="fade-left" data-aos-delay="700">
-      <img
+      <nuxt-img
+        class="banner"
         src="/images/photo.webp"
-        alt="José Victor"
-        width="500px"
-        height="650px"
+        alt="José Victor photo"
+        loading="lazy"
+        format="webp"
       />
     </div>
   </section>

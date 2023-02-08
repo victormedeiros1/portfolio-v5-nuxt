@@ -106,6 +106,7 @@ export default {
 
 <style lang="scss" scoped>
 .app-container {
+  position: relative;
   background-image: var(--bg-white);
   background-size: cover;
   background-attachment: fixed;

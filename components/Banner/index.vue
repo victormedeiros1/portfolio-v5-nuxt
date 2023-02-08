@@ -1,5 +1,5 @@
 <template>
-  <img class="banner" :src="src" :alt="alt" width="800px" height="200px" />
+  <nuxt-img class="banner" :src="src" :alt="alt" loading="lazy" format="webp" />
 </template>
 
 <script>
@@ -11,6 +11,10 @@ export default {
       default: '',
     },
     src: {
+      type: String,
+      default: '',
+    },
+    srcMobile: {
       type: String,
       default: '',
     },

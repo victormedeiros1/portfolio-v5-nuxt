@@ -1,13 +1,11 @@
 <template>
   <section id="skills" class="skills">
-    <img
+    <nuxt-img
       class="skills__art"
       src="/images/skills.webp"
       alt="Diagram with my skills"
-      width="950px"
-      height="788px"
-      data-aos="zoom-in"
-      data-aos-delay="200"
+      loading="lazy"
+      format="webp"
     />
   </section>
 </template>
