@@ -7,6 +7,7 @@
       sizes="xs:380px, sm:600px, md:730px, lg:970px"
       width="970px"
       height="808px"
+      preload
     />
   </section>
 </template>

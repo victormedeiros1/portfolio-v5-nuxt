@@ -6,6 +6,7 @@
     sizes="xs: 230px, sm:370px, md:450px, lg:620px"
     width="800px"
     height="200px"
+    preload
   />
 </template>
 

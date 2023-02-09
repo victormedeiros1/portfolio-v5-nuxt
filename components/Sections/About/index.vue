@@ -31,6 +31,7 @@
         sizes="xs:300px, sm:500px"
         width="500px"
         height="650px"
+        preload
       />
     </div>
   </section>
