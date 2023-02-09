@@ -21,10 +21,6 @@ export default {
       type: String,
       default: '',
     },
-    srcMobile: {
-      type: String,
-      default: '',
-    },
   },
 }
 </script>
