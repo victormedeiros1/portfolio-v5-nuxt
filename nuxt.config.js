@@ -1,11 +1,4 @@
 export default {
-  env: {
-    BASE_URL: process.env.BASE_URL,
-    TITLE: process.env.TITLE,
-    DESCRIPTION: process.env.DESCRIPTION,
-    OGIMAGE: process.env.OGIMAGE,
-  },
-
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
 
@@ -14,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: process.env.TITLE,
+    title: 'José Victor - Frontend Developer',
     htmlAttrs: {
       lang: 'en',
     },
@@ -24,27 +17,29 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.DESCRIPTION,
+        content:
+          'Hi, I’m José Victor, frontend developer. I started programming in 2017. I want to be a great developer and I am every day studying and striving more and more to become one.',
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: process.env.TITLE,
+        content: 'José Victor - Frontend Developer',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        ccontent: process.env.BASE_URL + process.env.OGIMAGE,
+        ccontent: 'https://www.josevictor.dev/' + '/ogImage.webp',
       },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: process.env.DESCRIPTION,
+        content:
+          'Hi, I’m José Victor, frontend developer. I started programming in 2017. I want to be a great developer and I am every day studying and striving more and more to become one.',
       },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: process.env.BASE_URL,
+        content: 'https://www.josevictor.dev/',
       },
       {
         keywords: 'portfolio, frontend',
@@ -58,22 +53,23 @@ export default {
       {
         hid: 'twitter:title',
         property: 'og:title',
-        content: process.env.TITLE,
+        content: 'José Victor - Frontend Developer',
       },
       {
         hid: 'twitter:url',
         name: 'twitter:url',
-        content: process.env.BASE_URL,
+        content: 'https://www.josevictor.dev/',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: process.env.BASE_URL + process.env.OGIMAGE,
+        content: 'https://www.josevictor.dev/' + '/ogImage.webp',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: process.env.DESCRIPTION,
+        content:
+          'Hi, I’m José Victor, frontend developer. I started programming in 2017. I want to be a great developer and I am every day studying and striving more and more to become one.',
       },
       { name: 'format-detection', content: 'telephone=no' },
     ],
