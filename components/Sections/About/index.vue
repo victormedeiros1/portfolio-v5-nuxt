@@ -28,7 +28,7 @@
         class="banner"
         src="/images/photo.webp"
         alt="José Victor photo"
-        sizes="xs:300 md:400 lg:500"
+        sizes="xxs:300px xs:400px lg:500px"
         width="500px"
         height="650px"
       />

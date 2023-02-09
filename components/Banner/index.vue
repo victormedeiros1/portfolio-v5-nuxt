@@ -3,7 +3,7 @@
     class="banner"
     :src="src"
     :alt="alt"
-    sizes="xs:500px md:620px lg:800px"
+    sizes="xs:230px xs:360px sm:440px md:620px lg:800px"
     width="800px"
     height="200px"
   />
