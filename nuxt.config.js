@@ -1,4 +1,11 @@
 export default {
+  env: {
+    BASE_URL: process.env.BASE_URL,
+    TITLE: process.env.TITLE,
+    DESCRIPTION: process.env.DESCRIPTION,
+    OGIMAGE: process.env.OGIMAGE,
+  },
+
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
 
@@ -7,14 +14,67 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'José Victor - Frontend Developer',
+    title: process.env.TITLE,
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.DESCRIPTION,
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: process.env.TITLE,
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        ccontent: process.env.BASE_URL + process.env.OGIMAGE,
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: process.env.DESCRIPTION,
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: process.env.BASE_URL,
+      },
+      {
+        keywords: 'portfolio, frontend',
+      },
+      // ==============================================================================
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'twitter:title',
+        property: 'og:title',
+        content: process.env.TITLE,
+      },
+      {
+        hid: 'twitter:url',
+        name: 'twitter:url',
+        content: process.env.BASE_URL,
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: process.env.BASE_URL + process.env.OGIMAGE,
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: process.env.DESCRIPTION,
+      },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
