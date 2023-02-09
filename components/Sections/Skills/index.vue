@@ -1,5 +1,5 @@
 <template>
-  <section id="skills" class="skills" data-aos="zoom-in" data-aos-delay="200">
+  <section id="skills" class="skills" data-aos="zoom-in" data-aos-delay="400">
     <nuxt-img
       class="skills__art"
       src="/images/skills.webp"
