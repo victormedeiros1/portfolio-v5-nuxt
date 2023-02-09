@@ -1,10 +1,10 @@
 <template>
-  <section id="skills" class="skills">
+  <section id="skills" class="skills" data-aos="zoom-in" data-aos-delay="200">
     <nuxt-img
       class="skills__art"
       src="/images/skills.webp"
       alt="Diagram with my skills"
-      sizes="xxs:380px xs:600px sm:720px md:970px"
+      sizes="xs:380px, sm:600px, md:730px, lg:970px"
       width="970px"
       height="808px"
     />
@@ -24,7 +24,7 @@ export default {
   &__art {
     width: 100%;
     height: initial;
-    max-width: 59.375rem;
+    max-width: 60.625rem;
   }
 }
 </style>

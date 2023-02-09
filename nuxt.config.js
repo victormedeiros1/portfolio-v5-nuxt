@@ -55,7 +55,6 @@ export default {
     },
     // The screen sizes predefined by `@nuxt/image`:
     screens: {
-      xxs: 320,
       xs: 420,
       sm: 640,
       md: 768,
@@ -74,7 +73,4 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    publicPath: '/_jvd/',
-  },
 }

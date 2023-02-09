@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar" data-aos="fade-left" data-aos-delay="800">
     <Bars small dark end />
     <ul class="navbar__list">
       <li class="navbar__item">
