@@ -98,7 +98,7 @@ export default {
   mounted() {
     AOS.init({
       once: true,
-      // disable: 'mobile',
+      disable: 'mobile',
     })
   },
 }
