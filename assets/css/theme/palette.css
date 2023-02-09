@@ -8,6 +8,7 @@
   --logo-opacity: initial;
   --logo-shadow: drop-shadow(0 0 6px #000);
 }
+
 .dark-mode:root {
   --dark: #eeeee9;
   --light: #2f2f2f;
@@ -17,4 +18,15 @@
   --bg-dark: url('~/static/images/bg-white.webp');
   --logo-opacity: 0.3;
   --logo-shadow: drop-shadow(0 0 10px #000);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --bg-white: url('~/static/images/bg-white-mobile.webp');
+    --bg-dark: url('~/static/images/bg-dark-mobile.webp');
+  }
+  .dark-mode:root {
+    --bg-white: url('~/static/images/bg-dark-mobile.webp');
+    --bg-dark: url('~/static/images/bg-white-mobile.webp');
+  }
 }
