@@ -124,7 +124,6 @@ export default {
 
   googleFonts: {
     preload: true,
-    preconnect: true,
     families: {
       'Concert+One': true,
       Poppins: [300, 400, 600, 700, 900],
