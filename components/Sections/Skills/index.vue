@@ -4,7 +4,9 @@
       class="skills__art"
       src="/images/skills.webp"
       alt="Diagram with my skills"
-      sizes="xs:600px sm: 720px md:970px"
+      sizes="xs:600px sm:720px md:970px"
+      width="970px"
+      height="808px"
     />
   </section>
 </template>

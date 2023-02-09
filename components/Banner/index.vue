@@ -4,6 +4,8 @@
     :src="src"
     :alt="alt"
     sizes="xs:500px md:620px lg:800px"
+    width="800px"
+    height="200px"
   />
 </template>
 
