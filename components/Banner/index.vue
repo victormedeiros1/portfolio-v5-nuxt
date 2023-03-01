@@ -32,6 +32,11 @@ export default {
   height: initial;
   max-width: 37.5rem;
   transform: translateX(-11%) translateY(0) rotate(20deg);
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateX(-12%) translateY(0) rotate(20deg);
+  }
 
   @media (max-width: 768px) {
     width: 150%;
