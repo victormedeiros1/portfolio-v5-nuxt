@@ -2,7 +2,7 @@
   <section id="personal" class="personal">
     <Heading data-aos="fade-right" data-aos-delay="200">PERSONAL</Heading>
     <div class="personal__content">
-      <div class="banners" data-aos="fade-right" data-aos-delay="300">
+      <div class="banners">
         <Banner
           v-for="{ id, src, alt } in projects"
           :key="id"
@@ -12,7 +12,7 @@
           @click.native="projectSelected = id"
         />
       </div>
-      <div class="card-wrapper" data-aos="fade-left" data-aos-delay="400">
+      <div class="card-wrapper">
         <Card
           :title="projects[projectSelected].title"
           :paragraphs="projects[projectSelected].paragraphs"
