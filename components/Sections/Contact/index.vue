@@ -6,13 +6,11 @@
     <h4 class="contact__subtitle" data-aos="fade-left" data-aos-delay="300">
       LET’S BUILD SOMETHING TOGETHER?
     </h4>
-    <CTA
-      href="mailto:josevictordev@gmail.com"
-      aria-label="Send me a email"
-      data-aos="fade-left"
-      data-aos-delay="400"
-      >SAY HELLO</CTA
-    >
+    <div class="contact__cta" data-aos="fade-left" data-aos-delay="400">
+      <CTA href="mailto:josevictordev@gmail.com" aria-label="Send me a email"
+        >SAY HELLO</CTA
+      >
+    </div>
     <div class="contact__social-medias">
       <SocialMedias data-aos="fade-right" data-aos-delay="500" />
     </div>
